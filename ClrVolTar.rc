@@ -1,0 +1,255 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\ClrVolTar.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ClrVolTar.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About ClrVolTar"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ClrVolTar Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_CLRVOLTAR_DIALOG DIALOGEX 0, 0, 328, 294
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ClrVolTar"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,16
+    PUSHBUTTON      "About",IDABOUT,263,25,50,16
+    PUSHBUTTON      "Browse",IDC_BUTTON_BROWSE,24,18,50,14
+    GROUPBOX        "File(s) ",IDC_STATIC,18,6,234,36
+    EDITTEXT        IDC_FILEPATH,78,18,168,14,ES_AUTOHSCROLL
+    GROUPBOX        "Constant Plane",IDC_STATIC,18,48,66,78
+    CONTROL         "Cyan",IDC_KPLANE_CYAN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,30,66,33,10
+    CONTROL         "Magenta",IDC_KPLANE_MAG,"Button",BS_AUTORADIOBUTTON,30,
+                    84,44,10
+    CONTROL         "Yellow",IDC_KPLANE_YEL,"Button",BS_AUTORADIOBUTTON,30,
+                    102,36,10
+    GROUPBOX        "Color Space",IDC_STATIC,90,48,66,78
+    CONTROL         "RGB",IDC_COLOR_RGB,"Button",BS_AUTORADIOBUTTON,102,66,
+                    29,10
+    CONTROL         "CMY",IDC_COLOR_CMY,"Button",BS_AUTORADIOBUTTON,102,84,
+                    30,10
+    CONTROL         "CMYK",IDC_COLOR_CMYK,"Button",BS_AUTORADIOBUTTON,102,
+                    102,34,10
+    GROUPBOX        "Swatch to Swatch",IDC_STATIC,162,48,144,78
+    EDITTEXT        IDC_SWATCH_DELTA,228,66,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SWATCH_DELTA_SPIN,"msctls_updown32",UDS_ARROWKEYS,
+                    270,66,10,14
+    LTEXT           "Color Delta(%)",IDC_STATIC,174,72,49,8
+    LTEXT           "Num. of swatches across width",IDC_STATIC,174,90,48,30
+    EDITTEXT        IDC_SWATCH_COUNT,228,96,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SWATCH_COUNT_SPIN,"msctls_updown32",UDS_ARROWKEYS,
+                    270,96,10,14
+    GROUPBOX        "Dimension(s) - Image",IDC_STATIC,18,198,138,72
+    EDITTEXT        IDC_IMG_WID,84,216,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Width",IDC_STATIC,36,222,20,8
+    LTEXT           "Heigth",IDC_STATIC,36,246,22,8
+    EDITTEXT        IDC_IMG_LEN,84,240,40,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Dimension(s) - Swatch",IDC_STATIC,162,198,144,72
+    EDITTEXT        IDC_SWATCH_WID,228,216,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SWATCH_WID_SPIN,"msctls_updown32",UDS_ARROWKEYS,
+                    270,216,11,14
+    EDITTEXT        IDC_SWATCH_LEN,228,240,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SWATCH_LEN_SPIN,"msctls_updown32",UDS_ARROWKEYS,
+                    270,240,11,14
+    LTEXT           "Width",IDC_STATIC,180,222,20,8
+    LTEXT           "Heigth",IDC_STATIC,180,246,22,8
+    LTEXT           "pixels",IDC_STATIC,126,222,19,8
+    LTEXT           "pixels",IDC_STATIC,126,246,24,8
+    LTEXT           "pixels",IDC_STATIC,288,222,24,8
+    LTEXT           "pixels",IDC_STATIC,288,246,24,8
+    GROUPBOX        "Color Separation",IDC_STATIC,18,132,66,60
+    EDITTEXT        IDC_SEP_MAX_INK,228,144,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SEP_MAX_INK_SPIN,"msctls_updown32",UDS_ARROWKEYS,
+                    270,144,11,14
+    LTEXT           "Max Ink (%)",IDC_STATIC,174,150,41,8
+    CONTROL         "GCR",IDC_SEP_GCR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    30,150,30,10
+    GROUPBOX        "UCR - Characteristics",IDC_STATIC,90,132,216,60
+    CONTROL         "UCR",IDC_SEP_UCR,"Button",BS_AUTORADIOBUTTON,30,168,30,
+                    10
+    PUSHBUTTON      "Browse",IDC_BROWSE_SEP,96,168,50,14
+    EDITTEXT        IDC_SEP_FILEPATH,150,168,150,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ClrVolTar.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "ClrVolTar.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CLRVOLTAR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 321
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 287
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About ClrVolTar..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\ClrVolTar.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
